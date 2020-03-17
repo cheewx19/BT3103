@@ -6,6 +6,10 @@
         <input type="text" v-model.lazy="item.name" required/>
         <label>Item Category</label>
         <input type="text" v-model.lazy="item.category"/>
+        <label>Item Description</label>
+        <textarea v-model.lazy="item.description"/>
+        <label>Item Stock</label>
+        <input type="number" v-model.lazy="item.stock"/>
         <button v-on:click.prevent="addItem">Add Item</button>
         
     </form>
@@ -22,7 +26,9 @@ export default {
         msg:"Add Item",
         item:{
           name:'',
-          category:''
+          category:'',
+          description:'',
+          stock:0
         },
         
         
