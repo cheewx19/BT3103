@@ -11,6 +11,10 @@
          <div id="chart">
             <linechart></linechart>
         </div>
+        <div id="chart">
+            <pie></pie>
+        </div>
+        <bubble></bubble>
     </div>
 </template>
 
@@ -18,9 +22,11 @@
 import charts from '../charts.js'
 import doughnut from '../doughnut.js'
 import linechart from '../linechart.js'
+import pie from '../pie.js'
+import bubble from '../bubble.js'
 export default {
     components:{
-        charts,doughnut,linechart
+        charts,doughnut,linechart,pie,bubble
     }
     
 }
@@ -32,7 +38,7 @@ export default {
     clear:both;
 }
 #chart{
-  height:240px;
+  height:350px;
   width:240px;
   border-style: solid;
   border-color:rgb(155, 84, 84);
